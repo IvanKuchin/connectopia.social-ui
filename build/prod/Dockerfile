@@ -12,8 +12,8 @@ RUN cd ./ts && tsc
 FROM busybox:latest as app
 
 # Create a non-root user to own the files and run our server
-RUN adduser -D static
-USER static
+# RUN adduser -D static
+# USER static
 WORKDIR /home/static
 
 # Copy the static website
